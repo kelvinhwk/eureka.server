@@ -1,0 +1,5 @@
+rootProject.name = 'eureka.server'
+include 'service1'
+include 'FrontClient'
+include 'service2'
+
