@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7246970-d35d-4f82-a39b-9641f8121fcf" name="Default Changelist" comment="" />
+    <list default="true" id="e7246970-d35d-4f82-a39b-9641f8121fcf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FrontClient/src/main/java/kelvin/front/feign/MyFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontClient/src/main/java/kelvin/front/feign/Service2Feign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontClient/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/FrontClient/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontClient/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FrontClient/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontClient/src/main/java/kelvin/front/FrontApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrontClient/src/main/java/kelvin/front/FrontApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontClient/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FrontClient/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service1/src/main/java/com/kelvin/Service1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/service1/src/main/java/com/kelvin/Service1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/service2/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service2/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/service2/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/kelvin/service2/Service2App.java" beforeDir="false" afterPath="$PROJECT_DIR$/service2/src/main/java/com/kelvin/service2/Service2App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/kelvin/service2/Service2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/service2/src/main/java/com/kelvin/service2/Service2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service2/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +72,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -69,6 +87,7 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectId" id="1QLuwci14ocjFnAGze1QTiGmKu9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/service2/build/libs/service2-0.0.1-SNAPSHOT.jar" />
@@ -171,10 +190,10 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="eureka.server:service1 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="eureka.server:FrontClient [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/service1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/FrontClient" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -182,7 +201,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -222,6 +241,13 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2" />
     </configuration>
+    <configuration name="service1-0.0.1-SNAPSHOT.jar 8082" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/service1/build/libs/service1-0.0.1-SNAPSHOT.jar" />
+      <option name="PROGRAM_PARAMETERS" value="--server.port=8082" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method v="2" />
+    </configuration>
     <configuration name="service2-0.0.1-SNAPSHOT.jar 8081" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/service2/build/libs/service2-0.0.1-SNAPSHOT.jar" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -229,25 +255,26 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.eureka.server:service1 [build]" />
       <item itemvalue="Gradle.eureka.server:FrontClient [bootJar]" />
       <item itemvalue="Gradle.eureka.server:FrontClient [bootWar]" />
       <item itemvalue="Gradle.eureka.server [clean]" />
       <item itemvalue="Gradle.eureka.server [bootJar]" />
+      <item itemvalue="Gradle.eureka.server:FrontClient [clean]" />
       <item itemvalue="JAR Application.eureka.server-0.0.1-SNAPSHOT.jar 8761" />
       <item itemvalue="JAR Application.eureka.server-0.0.1-SNAPSHOT.jar 8762" />
       <item itemvalue="JAR Application.FrontClient-0.0.1-SNAPSHOT.jar 80" />
       <item itemvalue="JAR Application.service1-0.0.1-SNAPSHOT.jar 8080" />
+      <item itemvalue="JAR Application.service1-0.0.1-SNAPSHOT.jar 8082" />
       <item itemvalue="JAR Application.service2-0.0.1-SNAPSHOT.jar 8081" />
       <item itemvalue="JAR Application.FrontClient-0.0.1-SNAPSHOT.jar 81" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.eureka.server:FrontClient [clean]" />
         <item itemvalue="Gradle.eureka.server [bootJar]" />
         <item itemvalue="Gradle.eureka.server [clean]" />
         <item itemvalue="Gradle.eureka.server:FrontClient [bootWar]" />
         <item itemvalue="Gradle.eureka.server:FrontClient [bootJar]" />
-        <item itemvalue="Gradle.eureka.server:service1 [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -263,6 +290,19 @@
       <updated>1567562438457</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/eureka_server$eureka_server__bootRun_.ic" NAME="eureka.server [bootRun] Coverage Results" MODIFIED="1567667606622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -11,3 +11,26 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/,http://localhost2:8762/eureka/
+
+# 设置service-1的策略为随机
+#Service-1:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+# 修改feign默认配置
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
+      Service-2:
+        connectTimeout: 1000
+        readTimeout: 1000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

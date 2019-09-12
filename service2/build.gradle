@@ -18,6 +18,9 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
     testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
 }
 
 // 设置常量springCloudVersion

@@ -32,6 +32,21 @@ dependencies {
 
     // 依赖service1
     compile project(':service1')
+
+    // feign客户端
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
+    // spring的Hystrix
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
+
+    // Hystrix的HystrixCommand注解需要这个依赖
+    implementation 'com.netflix.hystrix:hystrix-javanica'
+
+    // Hystrix的dashboard
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard'
+
+    // actuator
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
 }
 
 dependencyManagement {
